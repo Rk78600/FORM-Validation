@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Form Start -->
+    <div class="form">
+        <div class="Registration">
+            <h1>REGISTRATION FORM</h1>
+        </div>
+        <form action="" method="post" id="form" onsubmit="validateformsubmit(event)">
+            <br><br><br><br>
+            <label for="">Name:</label>
+            <input type="text" placeholder="Enter your Name" id="Name" oninput="validateformname()">
+            <br>
+            <span id="error" class="error"></span>
+            <br><br>
+            <label for="">Phone Number</label>
+            <input class="input1" type="tel" placeholder="Enter your Phone Number" id="Phone"
+                oninput="validateformphone()">
+            <br>
+            <span id="error1" class="error1"></span>
+            <br><br>
+            <label for="">Email:</label>
+            <input type="email" placeholder="Enter your Email Address" id="email" oninput="validateformemail()">
+            <br>
+            <span id="error2" class="error2"></span>
+            <br><br>
+            <div class="button">
+            <button type="submit" id="button">Submit</button>
+           <br><br>
+           <button type="reset" id="reset" onclick="resetbutton()">Reset</button>
+           <br>
+            <span id="error3" class="error3"></span>
+        </div>
+        </form>
+    </div>
+    <!-- Form End -->
+    <script src="script.js"></script>
+</body>
+
+</html>
